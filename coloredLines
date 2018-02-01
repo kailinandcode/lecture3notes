@@ -1,0 +1,12 @@
+//making a rainbow collection of lines, where line of one color is concentrated on one side of the canvas
+
+colorMode(HSB);
+
+while(true) {
+  var lineColorAndXposition = random(width);
+  stroke(lineColorAndXposition, 100, 100);
+  line(lineColorAndXposition, random(height), 
+    lineColorAndXposition - random(height)/10, random(height));
+}
+
+//
